@@ -49,7 +49,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="text-center py-20 h-screen flex justify-center items-center flex-col" id="hero">
+    <section class="text-center py-20 lg:h-screen flex justify-center items-center flex-col" id="hero">
         <h2 class="text-4xl md:text-5xl font-bold">Hi, I'm Rohit Kumar</h2>
         <p class="mt-4 text-lg text-gray-300">A passionate <span id="typed-text" class="text-cyan-400"></span></p>
         <p class="mt-4 max-w-xl mx-auto text-gray-400">With experience in full-stack development, I build modern,
@@ -58,7 +58,7 @@
 
     <!-- About Section -->
     <section id="about"
-        class="py-16 bg-gray-800 h-screen bg-opacity-40 flex flex-col lg:flex-row gap-4 justify-center items-center">
+        class=" bg-gray-800 lg:h-screen bg-opacity-40 flex flex-col lg:flex-row gap-4 justify-center items-center">
         <img src="my.png" alt="">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-cyan-400 mb-6 text-center">About Me</h2>
@@ -70,7 +70,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="h-screen flex flex-col justify-center items-center">
+    <section id="skills" class="lg:h-screen py-20 flex flex-col justify-center items-center">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-cyan-400 mb-8 text-center">Skills</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -121,7 +121,8 @@
 
 
     <!-- Projects Section -->
-    <section id="projects" class="py-16 h-screen flex flex-col justify-center items-center bg-gray-800 bg-opacity-40">
+    <section id="projects"
+        class="py-20 lg:h-screen flex flex-col justify-center items-center bg-gray-800 bg-opacity-40">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-cyan-400 mb-8 text-center">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -141,47 +142,53 @@
                         applications, and results.</p>
                 </div>
                 <div class="bg-gray-900 rounded-xl p-6 glow">
-                    <h3 class="text-xl font-bold text-cyan-300">Blog Management System</h3>
+                    <h3 class="text-xl font-bold text-cyan-300">The Journey</h3>
                     <p class="text-gray-300 mt-2">A dynamic blogging platform where users can create, edit, and publish
-                        posts with images and categories.</p>
+                        posts ,thoughts , with images and categories.can comment on Posts</p>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <!-- Contact Form -->
-        <form action="https://formsubmit.co/rohit.jit76@gmail.com" method="POST"
-            class="space-y-4 max-w-xl mx-auto mt-8 bg-gray-800 p-6 rounded-lg neon-border rounded-xl p-6 glow">
-            <input type="hidden" name="_captcha" value="false">
+
+        <section id="contact"
+            class=" lgh-screen p-4 pt-20  px-6 flex flex-col justify-center items-center bg-gray-800 bg-opacity-40">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-6">Contact Me</h2>
+            <!-- Contact Form -->
+            <form action="https://formsubmit.co/rohit.jit76@gmail.com" method="POST"
+                class="space-y-4 w-full lg:w-1/3 mx-auto mt-8 bg-gray-800 p-6 rounded-lg neon-border rounded-xl p-6 glow">
+                <input type="hidden" name="_captcha" value="false">
 
 
-            <div>
-                <label class="block mb-1 text-cyan-300 font-semibold">Name</label>
-                <input type="text" name="name" required class="w-full px-4 py-2 rounded bg-gray-700 text-white" />
-            </div>
-            <div>
-                <label class="block mb-1 text-cyan-300 font-semibold">Email</label>
-                <input type="email" name="email" required class="w-full px-4 py-2 rounded bg-gray-700 text-white" />
-            </div>
-            <div>
-                <label class="block mb-1 text-cyan-300 font-semibold">Subject</label>
-                <input type="text" name="subject" required class="w-full px-4 py-2 rounded bg-gray-700 text-white" />
-            </div>
-            <div>
-                <label class="block mb-1 text-cyan-300 font-semibold">Message</label>
-                <textarea name="message" rows="5" required
-                    class="w-full px-4 py-2 rounded bg-gray-700 text-white"></textarea>
-            </div>
-            <button type="submit"
-                class="bg-cyan-500 text-white w-full px-6 py-2 rounded hover:bg-cyan-400 transition">Send
-                Message</button>
-        </form>
+                <div>
+                    <label class="block mb-1 text-cyan-300 font-semibold">Name</label>
+                    <input type="text" name="name" required class="w-full px-4 py-2 rounded bg-gray-700 text-white" />
+                </div>
+                <div>
+                    <label class="block mb-1 text-cyan-300 font-semibold">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-2 rounded bg-gray-700 text-white" />
+                </div>
+                <div>
+                    <label class="block mb-1 text-cyan-300 font-semibold">Subject</label>
+                    <input type="text" name="subject" required
+                        class="w-full px-4 py-2 rounded bg-gray-700 text-white" />
+                </div>
+                <div>
+                    <label class="block mb-1 text-cyan-300 font-semibold">Message</label>
+                    <textarea name="message" rows="5" required
+                        class="w-full px-4 py-2 rounded bg-gray-700 text-white"></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-cyan-500 text-white w-full px-6 py-2 rounded hover:bg-cyan-400 transition">Send
+                    Message</button>
+            </form>
+        </section>
 
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="h-screen flex flex-col justify-center items-center">
+    <section class="h-screen flex flex-col justify-center items-center">
         <div class="max-w-xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-cyan-400 mb-6">Contact Me</h2>
+
             <p class="text-gray-400 mb-4">Let's build something awesome together! Reach out to me for collaborations or
                 project ideas.</p>
             <div class="text-gray-200">
